@@ -41,7 +41,7 @@ class YandexMusicTrackFetcher:
             return [{
                 'title': track.title,
                 'cover_uri': track.cover_uri,
-                'provider': artist_name,
+                'artist': artist_name,
                 'embed_url': track.background_video_uri,
                 'provider_video_id': None
             }]
@@ -71,8 +71,8 @@ async def main():
             print("\nFound videos:")
             for video in videos:
                 print(f"\nTitle: {video['title']}")
-                print(f"Provider: {video['provider']}")
-                print(f"Embed URL: {video['embed_url']}")
+                print(f"Artist: {video['provider']}")
+                print(f"Video URL: {video['embed_url']}")
 
         except ValueError as e:
             print(f"Error: {e}")
