@@ -2,7 +2,18 @@
 ## In English
 A set of Python-based mini-applications based on [unofficial API by MarshalX](https://github.com/MarshalX/yandex-music-api) aimed at fetching some basic information from Yandex Music streaming service.
 
-In order to use it, you will have to get a token (see [here](https://yandex-music.readthedocs.io/en/main/token.html) (in Russian) how to get it) and insert it into the application code instead of “`YOUR_TOKEN`” where necessary.
+In order to use the scripts, you will have to get a token (see [here](https://yandex-music.readthedocs.io/en/main/token.html) (in Russian) how to get it) and insert it into the application code instead of “`YOUR_TOKEN`” where necessary.
+
+You also will have to install the 'yandex-music' module from the command line of your OS by entering:
+```
+pip install -U yandex-music
+```
+Or by installing it from API's source code:
+```
+git clone https://github.com/MarshalX/yandex-music-api
+cd yandex-music-api
+python setup.py install
+```
 
 ### Scripts
 Currently ready scripts and what they can do:
@@ -21,6 +32,17 @@ If you have problems with the scripts, or have a suggestion on how to improve th
 Набор мини-приложений, написанных на языке Python и основанных на [неофициальном API от MarshalX](https://github.com/MarshalX/yandex-music-api), для получения некоторой базовой информации из стримингового сервиса "Яндекс Музыка".
 
 Для использования вам потребуется получить токен (см. [здесь](https://yandex-music.readthedocs.io/en/main/token.html) как это сделать) и вставить его в код приложения вместо "`YOUR_TOKEN`" там, где необходимо.
+
+Также вам необходимо установить модуль 'yandex-music' из терминала / командной строки вашей ОС введя команду:
+```
+pip install -U yandex-music
+```
+Или вы можете установить из исходного кода с помощью команды:
+```
+git clone https://github.com/MarshalX/yandex-music-api
+cd yandex-music-api
+python setup.py install
+```
 
 ### Описание скриптов
 Готовые на данный момент скрипты и что они умеют делать:
