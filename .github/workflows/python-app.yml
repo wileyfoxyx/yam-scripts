@@ -29,3 +29,6 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
+    - name: Display error logs
+      if: failure()
+      run: dmesg | tail -n 50
