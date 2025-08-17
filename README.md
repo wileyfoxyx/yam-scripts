@@ -2,9 +2,9 @@
 ## In English
 A set of Python-based mini-applications based on [unofficial API by MarshalX](https://github.com/MarshalX/yandex-music-api) aimed at fetching some basic information from Yandex Music streaming service.
 
-In order to use the scripts, you will have to get a token (see [here](https://yandex-music.readthedocs.io/en/main/token.html) (in Russian) how to get it) and insert it into the application code instead of “`YOUR_TOKEN`” where necessary.
+In order to use the scripts, you will have to get a token (see [here](https://yandex-music.readthedocs.io/en/main/token.html) (in Russian) how to get it) and insert it into the application code instead of “`YOUR_TOKEN`” where necessary, or insert when the script will asks you for it.
 
-You also will have to install the 'yandex-music' module from the command line of your OS by entering:
+For most of the script you also will have to install the 'yandex-music' module from the command line of your OS by entering:
 ```
 pip install -U yandex-music
 ```
@@ -20,8 +20,9 @@ Currently ready scripts and what they can do:
 * [albums.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/albums.py) - album title and its main artist, year and full release date of the album, full track list with all artists and track durations, information about the release label (taken from the “Label” and “Phonographic source” lines from the Yandex Music itself) and its distributor. [^1]
 * [tracks.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/tracks.py) - track title and its artist(s), year and full date of the release that includes this track, track duration, information about the release label (taken from the “Label” and “Phonographic source” lines from the Yandex Music itself) and its distributor.
 * [videoshots.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/videoshots.py) - track title and its artist(s), link to the videoshot [^2] attached to the track.
+* [top.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/top.py) - top 5 artists you listened this months, as seen on the Library tab of the app.
 
-Each of the scripts accepts both a separate necessary ID (of a track or an album) as well as a full link to it.
+Most of the scripts accepts both a separate necessary ID (of a track or an album) as well as a full link to it.
 
 If you have problems with the scripts, or have a suggestion on how to improve them, feel free to [create an issue](https://github.com/wileyfoxyx/yam-scripts/issues/new/choose).
 
@@ -31,9 +32,9 @@ If you have problems with the scripts, or have a suggestion on how to improve th
 ## На русском
 Набор мини-приложений, написанных на языке Python и основанных на [неофициальном API от MarshalX](https://github.com/MarshalX/yandex-music-api), для получения некоторой базовой информации из стримингового сервиса "Яндекс Музыка".
 
-Для использования вам потребуется получить токен (см. [здесь](https://yandex-music.readthedocs.io/en/main/token.html) как это сделать) и вставить его в код приложения вместо "`YOUR_TOKEN`" там, где необходимо.
+Для использования вам потребуется получить токен (см. [здесь](https://yandex-music.readthedocs.io/en/main/token.html) как это сделать) и вставить его в код приложения вместо "`YOUR_TOKEN`" там, где необходимо, или при запуске самого скрипта, когда будет предложено.
 
-Также вам необходимо установить модуль 'yandex-music' из терминала / командной строки вашей ОС введя команду:
+Для запуска большинства скриптов вам необходимо установить модуль 'yandex-music' из терминала / командной строки вашей ОС введя команду:
 ```
 pip install -U yandex-music
 ```
@@ -49,8 +50,9 @@ python setup.py install
 * [albums.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/albums.py) – название альбома и его основной исполнитель, год и полная дата выхода альбома, полный трек-лист со всеми исполнителями и продолжительностью треков, информация о лейбле релиза (берется из строки "Лейбл" и "Источник фонограммы" из обычной Я.Музыки) и его дистрибьюторе. [^3]
 * [tracks.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/tracks.py) – название трека и его исполнитель(-и), год и полная дата выхода релиза, в который включен данный трек, продолжительность трека, информация о лейбле релиза (берется из строки "Лейбл" и "Источник фонограммы" из обычной Я.Музыки) и его дистрибьюторе.
 * [videoshots.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/videoshots.py) – название трека и его исполнитель(-и), ссылка на прикрепленный к треку [видеошот](https://yandex.ru/support/music/ru/performers-and-copyright-holders/video-shot).
+* * [top.py](https://github.com/wileyfoxyx/yam-scripts/blob/main/top.py) - топ-5 исполнителей месяца; аналогично разделу во вкладке "Коллекция".
 
-Каждый из скриптов принимает как отдельный небходимый ID (трека/альбома), так и полную ссылку на него.
+Большая часть скриптов принимает как отдельный небходимый ID (трека/альбома), так и полную ссылку на него.
 
 Если возникли проблемы с работой скриптов, или есть предложение по их улучшению, смело [создавайте issue](https://github.com/wileyfoxyx/yam-scripts/issues/new/choose).
 
